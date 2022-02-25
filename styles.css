@@ -1,5 +1,5 @@
 * {
-    /* border: 1px red solid; */
+    border: 1px red solid;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -61,7 +61,7 @@ li a:hover::after {
 
 /* Main-1 */
 .main-1 {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     background-color: #1f2937;
     /* padding: 100px 200px; */
     height: 500px;
@@ -79,9 +79,32 @@ img {
 .main-1 img {
     background-color: grey;
     text-align: center;
-    max-width: 800px;
+    /* min-width: 150px; */
+    width: 300px;
     height: auto;
     /* color: white; */
+}
+.content-left {
+    width: 40%;
+}
+
+.main-text,
+.content-left p {
+    margin: 30px 0;
+    padding: 30px;
+}
+
+button {
+    background-color: #3882f6;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 30px;
+    /* text-transform: uppercase; */
+}
+button:hover {
+    background-color: #6d9ce6;
 }
 
 /* End of Main-1 */
@@ -111,16 +134,7 @@ img {
 h2 {
     text-align: center;
 }
-button {
-    background-color: #3882f6;
-    border-radius: 10%;
-    border: 1px white solid;
-    color: #f9faf8;
-    padding: 5px 20px;
-}
-button:hover {
-    background-color: #6d9ce6;
-}
+
 
 .main-text {
     font-size: 48px;
