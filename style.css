@@ -80,6 +80,7 @@ h2.secondary {
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+    text-align: center;
 }
 
 .quote-section {
@@ -97,27 +98,41 @@ h2.secondary {
 }
 
 /* main section */
-.header,
+.header .container,
 .main .container {
     justify-content: center;
-    height: 500px;
+    min-height: 600px;
+}
+.main .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.header {
+.header .container {
+    align-items: center;
+}
+
+.main-texts {
+    width: 800px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.img-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.main-texts {
-    width: 50%;
-}
 .main-image {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 500px;
 }
 
-.card .container {
+.main .card .container {
     flex-direction: column;
     align-items: center;
     gap: 40px;
@@ -128,7 +143,7 @@ h2.secondary {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .box .img {
